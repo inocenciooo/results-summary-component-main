@@ -1,0 +1,32 @@
+@media (max-width: 750px) {
+  body {
+    height: auto;
+    background-color: white;
+  }
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    height: auto;
+    width: 100vw;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .results {
+    border-radius: 0 0 25px 25px;
+    gap: 20px;
+  }
+  .summary li {
+    padding: 30px 15px;
+  }
+  .summary .button{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .summary button {
+    font-size: 22px;
+    margin: auto;
+    padding: 20px 35%;
+  }
+}

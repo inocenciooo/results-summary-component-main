@@ -30,6 +30,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
   font-family: "Hanken-Grotesk";
 }
 
@@ -54,7 +55,10 @@ section {
   overflow: hidden;
   font-size: var(--Font-size-paragraph);
   box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
 }
+
+/*RESULTS*/
 
 .results {
   background: linear-gradient(
@@ -64,6 +68,44 @@ section {
   );
   color: white;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+}
+.results h2{
+  font-size: 25px;
+  color: var(--Light-lavender);
+}
+.results h3 {
+  font-size: 32px;
+}
+
+.results div {
+  background: linear-gradient(
+    to bottom,
+    var(--Violet-blue-circle),
+    var(--Persian-blue-circle)
+  );
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 100px;
+}
+
+.results div p span{
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+}
+.results p {
+  text-align: center;
+  color: var(--Light-lavender);
 }
 
 /*SUMMARY*/
@@ -71,7 +113,6 @@ li {
   display: flex;
   justify-content: space-between;
 }
-
 
 .summary {
   padding: 40px;
@@ -87,6 +128,14 @@ li {
   border-radius: 40px;
   color: white;
   margin-top: 40px;
+  font-weight: 500;
+}
+.summary button:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue-background),
+    var(--Light-royal-blue-background)
+  );
 }
 .summary h2 {
   margin-bottom: 35px;
@@ -98,7 +147,11 @@ li {
   border-radius: 8px;
   margin-bottom: 15px;
 }
-
+.summary p {
+  text-align: center;
+  color: #a9a4af;
+  font-weight: 500;
+}
 .summary > ul li p:first-child {
   font-weight: 700;
   padding-left: 25px;
@@ -171,15 +224,18 @@ li {
   width: 20px;
   left: 0;
 }
-.summary ul > li p span{
-  font-weight: 700;
+.summary ul > li p span {
+  font-weight: bold;
+  color: #403e4f;
 }
 
 /*créditos*/
 .attribution {
-  font-size: 11px;
+  font-size: 14px;
+  margin: 20px 0;
   text-align: center;
+  font-weight: 500;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Green-teal);
 }
