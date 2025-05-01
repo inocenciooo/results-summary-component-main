@@ -16,6 +16,8 @@
   --Pale-blue: hsl(221, 100%, 96%);
   --Light-lavender: hsl(241, 100%, 89%);
   --Dark-gray-blue: hsl(224, 30%, 27%);
+
+  --Font-size-paragraph: 18px;
 }
 
 @font-face {
@@ -46,6 +48,12 @@ section {
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 730px;
+  height: 510px;
+  border-radius: 25px;
+  overflow: hidden;
+  font-size: var(--Font-size-paragraph);
+  box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.2);
 }
 
 .results {
@@ -55,43 +63,116 @@ section {
     var(--Light-royal-blue-background)
   );
   color: white;
+  border-radius: 25px;
 }
+
 /*SUMMARY*/
 li {
   display: flex;
   justify-content: space-between;
 }
-button {
+
+
+.summary {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.summary button {
   all: unset;
   cursor: pointer;
-  display: flex;
   background-color: var(--Dark-gray-blue);
-  height: 100%;
-  padding: 8px 100px;
+  padding: 15px 105px;
   border-radius: 40px;
-}
-
-.summary .button {
-  display: flex;
-  justify-content: center;
   color: white;
+  margin-top: 40px;
+}
+.summary h2 {
+  margin-bottom: 35px;
+  font-size: 25px;
 }
 
-.summary .reaction{
-    background-color:hsla(0, 100%, 67%, 10%);
+.summary li {
+  padding: 15px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
+
+.summary > ul li p:first-child {
+  font-weight: 700;
+  padding-left: 25px;
+}
+
+.summary .reaction {
+  background-color: hsla(0, 100%, 67%, 5%);
+}
+
 .summary .reaction p:nth-child(1) {
   color: var(--Light-red);
+  position: relative;
+}
+.summary .reaction p:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  background-image: url(images/icon-reaction.svg);
+  height: 20px;
+  width: 20px;
+  left: 0;
+}
+
+.summary .memory {
+  background-color: hsla(39, 100%, 56%, 5%);
 }
 .summary .memory p:nth-child(1) {
   color: var(--Orangey-yellow);
+  position: relative;
+}
+
+.summary .memory p:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  background-image: url(images/icon-memory.svg);
+  height: 20px;
+  width: 20px;
+  left: 0;
+}
+
+.summary .verbal {
+  background-color: hsla(166, 100%, 37%, 5%);
 }
 .summary .verbal p:nth-child(1) {
   color: var(--Green-teal);
+  position: relative;
 }
 
+.summary .verbal p:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  background-image: url(images/icon-verbal.svg);
+  height: 20px;
+  width: 20px;
+  left: 0;
+}
+
+.summary .visual {
+  background-color: hsla(234, 85%, 45%, 5%);
+}
 .summary .visual p:nth-child(1) {
   color: var(--obalt-blue);
+  position: relative;
+}
+
+.summary .visual p:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  background-image: url(images/icon-visual.svg);
+  height: 20px;
+  width: 20px;
+  left: 0;
+}
+.summary ul > li p span{
+  font-weight: 700;
 }
 
 /*créditos*/
