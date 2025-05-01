@@ -172,6 +172,7 @@ li {
   height: 20px;
   width: 20px;
   left: 0;
+  top: .15em;
 }
 
 .summary .memory {
@@ -189,6 +190,7 @@ li {
   height: 20px;
   width: 20px;
   left: 0;
+  top: .15em;
 }
 
 .summary .verbal {
@@ -206,6 +208,7 @@ li {
   height: 20px;
   width: 20px;
   left: 0;
+  top: .15em;
 }
 
 .summary .visual {
@@ -223,6 +226,7 @@ li {
   height: 20px;
   width: 20px;
   left: 0;
+  top: .15em;
 }
 .summary ul > li p span {
   font-weight: bold;
